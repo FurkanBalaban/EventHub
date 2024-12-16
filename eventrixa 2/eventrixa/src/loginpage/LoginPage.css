@@ -1,0 +1,165 @@
+/* LoginPage container */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #520202, #000000);
+    font-family: 'Poppins', Arial, sans-serif; /* Daha modern bir yazı tipi */
+    color: #fff;
+    padding: 0px;
+}
+
+/* Login form header */
+.login-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Daha kontrast bir görünüm */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Hafif gölge efekti */
+}
+
+/* Form styling */
+.login-form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Daha belirgin bir gölge */
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+}
+
+/* Form group styling */
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Yuvarlatılmış kenarlar */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease; /* Animasyonlu geçiş */
+}
+
+.login-form .form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Hafif bir ışık efekti */
+}
+
+/* Submit button styling */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #7e0303, #000000); /* Gradyan buton */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+.login-form button:hover {
+    background: linear-gradient(135deg, #0056b3, #520dc2); /* Hover sırasında koyulaşma */
+    transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+}
+
+.login-form button:active {
+    transform: translateY(0); /* Tıklanma efekti */
+}
+
+/* Forgot password button styling */
+.forgot-password-button {
+    display: block;
+    margin: 20px auto 0 auto;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-button:hover {
+    color: #0056b3; /* Hover sırasında koyulaşma */
+}
+
+/* Register button styling */
+.register-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #590b0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.register-button:hover {
+    background: #218838;
+    transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+}
+
+.register-button:active {
+    transform: translateY(0); /* Tıklanma efekti */
+}
+
+/* Message styling */
+.message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #28a745;
+    background: rgba(40, 167, 69, 0.1); /* Hafif yeşil arka plan */
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #28a745;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* User info styling */
+.user-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9f7ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #155724;
+}
+
+.user-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.user-info p {
+    font-size: 1rem;
+}

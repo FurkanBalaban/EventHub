@@ -1,0 +1,143 @@
+.my-events-container {
+    padding: 20px;
+    max-width: 1200px; /* Daha geniş bir düzen için */
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif; /* Modern bir yazı tipi */
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ef); /* Arka plan gradyanı */
+    border-radius: 12px; /* Hafif yuvarlatılmış kenarlar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Daha geniş kart düzeni */
+    gap: 20px;
+}
+
+.event-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animasyonu */
+    cursor: pointer;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Hover sırasında yukarı kalkma efekti */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover sırasında daha belirgin gölge */
+}
+
+.event-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    border-bottom: 2px solid #4CAF50; /* Başlık altı çizgisi */
+    padding-bottom: 8px;
+}
+
+.event-card p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6; /* Daha iyi okunabilirlik */
+}
+
+.event-card p strong {
+    color: #333; /* Vurgulanan metin için koyu renk */
+}
+
+.event-card button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #4CAF50, #3e8e41); /* Gradyan buton */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Hover animasyonu */
+    margin-top: 10px;
+}
+
+.event-card button:hover {
+    background: linear-gradient(135deg, #3e8e41, #2e6d31); /* Hover sırasında daha koyu gradyan */
+    transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+}
+
+.event-card button:disabled {
+    background: #ccc; /* Devre dışı buton rengi */
+    cursor: not-allowed; /* Devre dışı cursor */
+}
+
+.event-card .event-messages {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f9f0;
+    border-radius: 8px;
+    border: 1px solid #d6e9d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #2c662d;
+}
+
+.event-card .event-messages h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.event-card .event-messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-card .event-messages li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.event-card .message-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-card .message-input textarea {
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.event-card .message-input textarea:focus {
+    border-color: #4CAF50; /* Odaklanma sırasında vurgulu kenarlık */
+}
+
+.event-card .message-input button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Mavi gradyan */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.event-card .message-input button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494); /* Hover sırasında koyulaşma */
+    transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+}

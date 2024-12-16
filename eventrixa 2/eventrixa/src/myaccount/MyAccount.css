@@ -1,0 +1,97 @@
+/* MyAccount.css */
+
+/* Genel stil ayarları */
+.my-account {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+
+.my-account img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.my-account h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.my-account form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.my-account label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.my-account input,
+.my-account select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.my-account button {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.my-account button:hover {
+    background-color: #45a049;
+}
+
+.my-account div p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.my-account div p strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.my-account .edit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.my-account .edit-button:hover {
+    background-color: #0056b3;
+}
+
+.my-account .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
